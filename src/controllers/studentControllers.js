@@ -10,7 +10,9 @@ export const newEntry = (req, res)=> {
         if(err){
             res.send(err)
         }
-        res.json(contact)
+        res.json({
+            msg:'Item inserted successfully!',
+            status:'00000'})
     })
 
 }
